@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 02</title>
+    <style>
+        #main {
+            position: relative;
+            margin: 240px auto;
+            width: 600px;
+            height: 492px;
+            background: #050210;
+        }
+
+        #circle1 {
+            position: absolute;
+            top: 96px;
+            left: 150px;
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            filter: blur(50px);
+            animation-name: animation1;
+            animation-duration: 1s;
+            animation-play-state: running;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            opacity: 0.5;
+        }
+
+        #circle2 {
+            position: absolute;
+            top: 121px;
+            left: 175px;
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            animation-name: animation2;
+            animation-duration: 1s;
+            animation-play-state: running;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        #circle3 {
+            position: absolute;
+            top: 121px;
+            left: 175px;
+            width: 250px;
+            height: 250px;
+            transform: scale(0.85);
+            border-radius: 100%;
+            background: #060216;
+
+        }
+
+        #circle4 {
+            position: absolute;
+            top: 231px;
+            left: 285px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background-color: #140d30;
+            opacity: 0.5;
+            animation-name: animation3;
+            animation-duration: 1s;
+            animation-play-state: running;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            filter: blur(0.5px);
+        }
+
+        @keyframes animation1 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes animation2 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes animation3 {
+            0% {
+                transform: scale(50%);
+            }
+
+            100% {
+                transform: scale(700%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+</body>
+
+</html>
